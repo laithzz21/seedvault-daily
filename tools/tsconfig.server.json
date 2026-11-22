@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "customConditions": [],
+        "exactOptionalPropertyTypes": false,
+        "outDir": "../dist/types/server",
+        "rootDir": "../src/server",
+        "tsBuildInfoFile": "../dist/types/server/tsconfig.tsbuildinfo",
+        "types": [
+            "node"
+        ]
+    },
+    "exclude": [],
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "../src/server/**/*"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.shared.json"
+        }
+    ]
+}

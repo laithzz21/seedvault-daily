@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "composite": false,
+        "noEmit": true,
+        "types": [
+            "node"
+        ]
+    },
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "../src/shared/**/*.test.ts"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.shared.json"
+        }
+    ]
+}

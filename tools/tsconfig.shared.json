@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "WebWorker",
+            "ES2023"
+        ],
+        "outDir": "../dist/types/shared",
+        "rootDir": "../src/shared",
+        "tsBuildInfoFile": "../dist/types/shared/tsconfig.tsbuildinfo"
+    },
+    "exclude": [
+        "../src/shared/**/*.test.ts"
+    ],
+    "extends": "./tsconfig.base.json",
+    "include": [
+        "../src/shared/**/*"
+    ]
+}
