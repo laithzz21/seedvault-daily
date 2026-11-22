@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: ui-rounded, 'SF Pro Rounded', 'Segoe UI', system-ui, sans-serif;
+
+  --color-cream: #fdf6ec;
+  --color-parchment: #f7ecd7;
+  --color-soil-light: #e8d5b5;
+  --color-soil: #c9a876;
+  --color-soil-dark: #8b5e3c;
+  --color-bark: #5d3a1a;
+  --color-leaf: #4d9e57;
+  --color-leaf-dark: #2f6b3a;
+  --color-leaf-pale: #d9ead3;
+  --color-sunbeam: #f5b301;
+  --color-pond: #7dd3fc;
+  --color-pond-dark: #0369a1;
+  --color-shade: #6b7f6e;
+}
+
+@keyframes sprout {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes sunpulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleX(1.12);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+}
+
+.animate-sprout {
+  animation: sprout 0.35s ease-out;
+}
+
+.animate-pop {
+  animation: pop 0.25s ease-out;
+}
+
+.animate-floaty {
+  animation: floaty 3s ease-in-out infinite;
+}
+
+.animate-sunpulse {
+  animation: sunpulse 2.4s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripple 2.8s ease-in-out infinite;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-bark);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
